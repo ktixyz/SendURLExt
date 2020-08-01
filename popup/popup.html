@@ -4,8 +4,14 @@
     <title>Save URL</title>
 
     <style>
+        html,
+        body {
+            overflow: hidden;
+            width: 300px;
+        }
+
         #send-url-btn {
-            font-size: 19px;
+            font-size: 17px;
             font-family: "Inter", "Cascadia Code", sans-serif;
             overflow: visible;
             border-radius: 3px;
@@ -37,7 +43,13 @@
             border: 2px solid #cff5b3;
             color: #6AAA3B;
             padding-right: 6px;
-            cursor: default;
+        }
+
+        #send-url-btn.failed {
+            background-color: #f5b3b3;
+            border: 2px solid #f5b3b3;
+            color: #aa3b3b;
+            padding-right: 6px;
         }
 
         svg {
