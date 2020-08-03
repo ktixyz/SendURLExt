@@ -5,11 +5,13 @@
     "description": "Send current tab url to external server",
     "homepage_url": "https://github.com/ktixyz/SendURLExt",
     "permissions": [
-        "activeTab"
+        "activeTab",
+        "contextMenus",
+        "tabs"
     ],
-    "browser_action": {
-        "default_icon": "icons/beasts-32.png",
-        "default_title": "Send URL",
-        "default_popup": "popup/popup.html"
+    "background": {
+        "scripts": [
+            "background.js"
+        ]
     }
 }
